@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dar Al Zain General Trading LLC</title>
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
 
     <style>
         * {
@@ -15,151 +14,243 @@
             padding: 0;
             box-sizing: border-box;
         }
-        html, body {
-            height: 100%;
-            overflow: hidden;
-            font-family: 'Open Sans', sans-serif;
-            background-color: #f5f5f5;
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: white;
             color: #333;
         }
-        nav {
-            position: fixed;
-            top: 0;
+
+        /* Header */
+        header {
             width: 100%;
             background-color: #1a1a1a;
-            color: #fff;
-            padding: 15px 30px;
+            color: white;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            font-family: 'Montserrat', sans-serif;
+            padding: 20px 50px;
+            position: fixed;
+            top: 0;
             z-index: 100;
-            font-size: 18px;
         }
+
+        header h1 {
+            font-size: 28px;
+            font-weight: 600;
+        }
+
         nav a {
             color: white;
             text-decoration: none;
-            margin-left: 20px;
-            font-weight: 600;
+            margin-left: 30px;
+            font-size: 18px;
+            transition: color 0.3s;
         }
+
         nav a:hover {
-            text-decoration: underline;
+            color: #d4af37;
         }
-        section {
-            height: 100vh;
+
+        /* Hero Section */
+        .hero {
+            height: 90vh;
+            text-align: center;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            text-align: center;
-            padding: 20px;
+            padding: 40px;
         }
-        .hero {
-            background: linear-gradient(135deg, #e3e3e3, #fff);
-        }
+
         .hero img {
-            width: 250px;
+            width: 150px;
             height: auto;
             margin-bottom: 20px;
         }
+
         .hero h1 {
-            font-size: 50px;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 600;
+            font-size: 48px;
             margin-bottom: 10px;
-            color: #333;
         }
+
         .hero p {
             font-size: 22px;
-            font-weight: 300;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
             color: #666;
         }
-        .about, .contact {
-            background-color: #fff;
-        }
-        .about h2, .contact h2 {
-            font-size: 36px;
-            margin-bottom: 15px;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 600;
-            color: #444;
-        }
-        section p {
+
+        .hero button {
+            padding: 15px 40px;
+            background-color: #d4af37;
+            color: white;
+            border: none;
+            border-radius: 30px;
             font-size: 18px;
-            max-width: 800px;
-            margin: 10px 0;
-            line-height: 1.6;
-            font-weight: 300;
+            cursor: pointer;
+            transition: background-color 0.3s;
         }
-        ul {
-            list-style-type: disc;
-            margin: 20px 0;
-            padding-left: 40px;
-            text-align: left;
-            max-width: 800px;
+
+        .hero button:hover {
+            background-color: #b8992c;
         }
-        iframe {
-            width: 80%;
-            height: 60%;
+
+        /* About Section */
+        section {
+            max-width: 900px;
+            margin: 100px auto;
+            padding: 40px 20px;
+        }
+
+        section h2 {
+            font-size: 40px;
+            margin-bottom: 20px;
+            font-family: 'Merriweather', serif;
+        }
+
+        section p {
+            font-size: 20px;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        /* Contact Section */
+        .contact-details {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+            gap: 20px;
+        }
+
+        .contact-card {
+            flex: 1;
+            background-color: #f9f9f9;
+            padding: 20px;
             border-radius: 10px;
-            border: 0;
-            margin-top: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
         }
+
+        .contact-card h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .contact-card p {
+            font-size: 18px;
+        }
+
+        .contact-card button {
+            padding: 12px 30px;
+            background-color: #1a1a1a;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+        }
+
+        .contact-card button:hover {
+            background-color: #333;
+        }
+
+        iframe {
+            width: 100%;
+            height: 400px;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+
+        /* Footer */
         footer {
             background-color: #1a1a1a;
             color: white;
             text-align: center;
-            padding: 10px;
+            padding: 15px;
             position: fixed;
             bottom: 0;
             width: 100%;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 300;
+        }
+
+        footer a {
+            color: #d4af37;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav a {
+                margin: 10px 0;
+            }
+
+            .contact-details {
+                flex-direction: column;
+            }
+
+            iframe {
+                height: 300px;
+            }
         }
     </style>
 </head>
 <body>
 
-    <!-- Navigation -->
-    <nav>
-        <div>Dar Al Zain General Trading LLC</div>
-        <div>
+    <!-- Header -->
+    <header>
+        <h1>Dar Al Zain General Trading LLC</h1>
+        <nav>
             <a href="#home">Home</a>
             <a href="#about">About Us</a>
-            <a href="#contact">Contact Us</a>
-        </div>
-    </nav>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-    <!-- Hero Section (Home) -->
+    <!-- Hero Section -->
     <section class="hero" id="home">
         <img src="logo.png" alt="Dar Al Zain Logo">
-        <h1>Welcome to Dar Al Zain General Trading LLC</h1>
+        <h1>Welcome to Dar Al Zain</h1>
         <p>Your trusted partner in wholesale and retail trading.</p>
+        <button onclick="window.location.href='#contact'">Get in Touch</button>
     </section>
 
     <!-- About Us Section -->
-    <section class="about" id="about">
+    <section id="about">
         <h2>About Us</h2>
-        <p><strong>Dar Al Zain General Trading LLC</strong>, established in 1996, is a distinguished leader in wholesale and retail trading. Located in Dubai, UAE, we offer a wide range of products including food, non-food items, perfumes, cosmetics, garments, and fresh produce. With a strong presence in the GCC market, we’ve expanded into India, Bangladesh, Sri Lanka, Singapore, and the UK.</p>
-        <p>Our mission is to provide superior products and exceptional service to foster long-term partnerships. We envision becoming a globally recognized leader in the trading industry.</p>
+        <p>Founded in 1996, Dar Al Zain General Trading LLC has built a reputation as a leader in the wholesale and retail trading industry. Based in Dubai, UAE, we offer an extensive range of products, including food, non-food items, perfumes, cosmetics, garments, and fresh produce.</p>
+        <p>With a strong presence in the GCC region, we have expanded our operations to India, Bangladesh, Sri Lanka, Singapore, and the UK. Our mission is to provide high-quality products while fostering long-term business relationships.</p>
     </section>
 
     <!-- Contact Us Section -->
-    <section class="contact" id="contact">
+    <section id="contact">
         <h2>Contact Us</h2>
-        <p>We’d love to hear from you! Use the following contact details to reach out:</p>
-        <p><strong>Email:</strong> <a href="mailto:sameer@daralzaingroup.com">info@daralzaingroup.com</a></p>
-        <p><strong>Phone:</strong> +971 43234096</p>
-        <p><strong>Address:</strong> Al Barsha, Dubai, UAE</p>
+        <div class="contact-details">
+            <div class="contact-card">
+                <h3>Phone</h3>
+                <p>+971 43234096</p>
+            </div>
+            <div class="contact-card">
+                <h3>Email</h3>
+                <button onclick="window.location.href='mailto:sameer@daralzaingroup.com'">Send Email</button>
+            </div>
+        </div>
 
-        <!-- Google Maps Embed -->
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14450.938157333925!2d55.1878617!3d25.1108459!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6b98af766421%3A0x729ffe416fa363b!2sCare%20Plus%20Supermarket!5e0!3m2!1sen!2sae!4v1729678021291!5m2!1sen!2sae" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14450.938157333925!2d55.1878617!3d25.1108459!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6b98af766421%3A0x729ffe416fa363b!2sCare%20Plus%20Supermarket!5e0!3m2!1sen!2sae!4v1729678021291!5m2!1sen!2sae" allowfullscreen="" loading="lazy"></iframe>
     </section>
 
     <!-- Footer -->
     <footer>
-        © 2024 Dar Al Zain General Trading LLC. All rights reserved.
+        <p>© 2024 Dar Al Zain General Trading LLC. All rights reserved. <a href="#home">Back to Top</a></p>
     </footer>
 
 </body>
