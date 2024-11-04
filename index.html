@@ -152,20 +152,19 @@
 
         /* Contact Section */
         .contact-details {
-            display: flex;
-            justify-content: space-around;
             margin-top: 30px;
             gap: 20px;
-            flex-wrap: wrap;
+            max-width: 900px;
+            margin: auto;
         }
 
         .contact-card {
-            flex: 1;
             background-color: #f9f9f9;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             text-align: center;
+            margin-bottom: 40px;
         }
 
         .contact-card h3 {
@@ -195,7 +194,7 @@
 
         iframe {
             width: 100%;
-            height: 400px;
+            height: 500px;
             border-radius: 10px;
             margin-top: 30px;
         }
@@ -226,10 +225,6 @@
 
             nav a {
                 margin: 10px 0;
-            }
-
-            .contact-details {
-                flex-direction: column;
             }
 
             iframe {
@@ -279,26 +274,30 @@
     </section>
 
     <!-- Contact Us Section -->
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <div class="contact-details">
-            <div class="contact-card">
-                <h3>Phone</h3>
-                <p>+971 43234096</p>
-            </div>
-            <div class="contact-card">
-                <h3>Email</h3>
-                <button onclick="window.location.href='mailto:sameer@daralzaingroup.com'">Send Email</button>
-            </div>
-            <div class="contact-card">
-                <h3>Address</h3>
-                <p>Dar Al Zain General Trading LLC</p>
-                <p>Careplus Supermarket Building</p>
-                <p>Al Barsha, Dubai, UAE</p>
-            </div>
+    <section id="contact" class="contact-details">
+        <!-- Dar Al Zain Contact Card -->
+        <div class="contact-card">
+            <h2>Dar Al Zain General Trading LLC</h2>
+            <h3>Contact Details</h3>
+            <p><strong>Phone:</strong> +971 43234096</p>
+            <p><strong>Email:</strong> <button onclick="window.location.href='mailto:sameer@daralzaingroup.com'">Send Email</button></p>
+            <p><strong>Address:</strong></p>
+            <p>Careplus Supermarket Building,</p>
+            <p>Al Barsha, Dubai, UAE</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14450.938157333925!2d55.1878617!3d25.1108459!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6b98af766421%3A0x729ffe416fa363b!2sCare%20Plus%20Supermarket!5e0!3m2!1sen!2sae!4v1729678021291!5m2!1sen!2sae" allowfullscreen="" loading="lazy"></iframe>
         </div>
 
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14450.938157333925!2d55.1878617!3d25.1108459!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6b98af766421%3A0x729ffe416fa363b!2sCare%20Plus%20Supermarket!5e0!3m2!1sen!2sae!4v1729678021291!5m2!1sen!2sae" allowfullscreen="" loading="lazy"></iframe>
+        <!-- AL DHAIT MARKET Contact Card -->
+        <div class="contact-card">
+            <h2>AL DHAIT MARKET</h2>
+            <h3>Contact Details</h3>
+            <p><strong>Phone:</strong> 07-2354143, +971 568356041</p>
+            <p><strong>Email:</strong> <button onclick="window.location.href='mailto:sameer@daralzaingroup.com'">Send Email</button></p>
+            <p><strong>Address:</strong></p>
+            <p>Zayed Centre,</p>
+            <p>Al Dhait South, Ras Al Khaimah, UAE</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.8981533733026!2d55.924187475922256!3d25.611104016116795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ef672f7c5fd8b1f%3A0xf3bdeac2a978e9c8!2sZayed%20Center%20-%20Al%20Dhait%20South%20-%20Ras%20al%20Khaimah!5e0!3m2!1sen!2sae!4v1729678021291!5m2!1sen!2sae" allowfullscreen="" loading="lazy"></iframe>
+        </div>
     </section>
 
     <!-- Footer -->
