@@ -61,6 +61,7 @@
             justify-content: center;
             align-items: center;
             padding: 40px;
+            margin-top: 80px;
         }
 
         .hero img {
@@ -111,6 +112,41 @@
         section p {
             font-size: 20px;
             line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        /* Brand Section */
+        .brands {
+            text-align: center;
+        }
+
+        .brand-card {
+            display: inline-block;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+            margin-top: 20px;
+        }
+
+        .brand-logo {
+            width: 150px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .brand-card h3 {
+            font-size: 24px;
+            font-family: 'Poppins', sans-serif;
+            margin-bottom: 5px;
+        }
+
+        .brand-card p {
+            font-size: 18px;
+            color: #666;
+            font-style: italic;
             margin-bottom: 15px;
         }
 
@@ -170,9 +206,6 @@
             color: white;
             text-align: center;
             padding: 15px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
         }
 
         footer a {
@@ -213,6 +246,7 @@
         <nav>
             <a href="#home">Home</a>
             <a href="#about">About Us</a>
+            <a href="#brands">Our Brands</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
@@ -230,6 +264,18 @@
         <h2>About Us</h2>
         <p>Founded in 1996, Dar Al Zain General Trading LLC has built a reputation as a leader in the wholesale and retail trading industry. Based in Dubai, UAE, we offer an extensive range of products, including food, non-food items, perfumes, cosmetics, garments, and fresh produce.</p>
         <p>With a strong presence in the GCC region, we have expanded our operations to India, Bangladesh, Sri Lanka, Singapore, and the UK. Our mission is to provide high-quality products while fostering long-term business relationships.</p>
+    </section>
+
+    <!-- Brand Section -->
+    <section class="brands" id="brands">
+        <h2>Our Brands</h2>
+        <p>We are proud to partner with some of the most trusted names in the industry. Our brands stand for quality and commitment to customer satisfaction. Here is one of our esteemed brands:</p>
+
+        <div class="brand-card">
+            <img src="aldhait_market_logo.jpg" alt="Al Dhait Market Logo" class="brand-logo">
+            <h3>Al Dhait Market</h3>
+            <p>Always Fresh</p>
+        </div>
     </section>
 
     <!-- Contact Us Section -->
@@ -257,7 +303,7 @@
 
     <!-- Footer -->
     <footer>
-        <p>© 2024 Dar Al Zain General Trading LLC. All rights reserved Created by Sameer. <a href="#home">Back to Top</a></p>
+        <p>© 2024 Dar Al Zain General Trading LLC. All rights reserved. Created by Sameer. <a href="#home">Back to Top</a></p>
     </footer>
 
 </body>
